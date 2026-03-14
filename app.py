@@ -120,7 +120,7 @@ elif menu == "🚚 Inventory Operations":
 elif menu == "📈 Analytics":
     show_analytics()
 
-elif menu == "AI Insights":
+elif menu == "🤖 AI Insights":
     show_ai_insights()
 
 # Logout button
