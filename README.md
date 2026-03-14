@@ -71,29 +71,6 @@ All data is stored in a SQLite database and processed using Python libraries for
 
 ---
 
-## System Workflow
-
-```mermaid
-flowchart TD
-
-A[User Login] --> B[Dashboard]
-
-B --> C[Add / Manage Products]
-
-C --> D[Inventory Operations
-Receive / Deliver / Transfer]
-
-D --> E[Update Inventory Database]
-
-E --> F[Analytics Dashboard]
-
-F --> G[AI Insights
-Demand Prediction
-Restock Recommendation
-Inventory Health Score]
-
----
-
 ## Installation and Setup
 
 ### 1 Clone the repository
