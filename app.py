@@ -6,39 +6,40 @@ from dashboard import show_dashboard
 from products import product_page
 from inventory import inventory_page
 from analytics import show_analytics
+from ai_insights import show_ai_insights
 
 
 # Page configuration
 st.set_page_config(
-    page_title="CoreInventory",
+    page_title="CoreInventory Smart IMS",
     page_icon="📦",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 st.markdown("""
 <style>
 
-.login-container{
-display:flex;
-justify-content:center;
-align-items:center;
-height:80vh;
+.main {
+background-color: #f5f7fb;
 }
 
-.login-box{
-background:white;
-padding:40px;
-border-radius:16px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-width:400px;
+h1, h2, h3 {
+color: #1f4e79;
 }
 
-.login-title{
-font-size:28px;
-font-weight:700;
-text-align:center;
-margin-bottom:20px;
-color:#4f46e5;
+.stButton>button {
+background-color: #4CAF50;
+color: white;
+border-radius: 8px;
+height: 40px;
+}
+
+.stMetric {
+background-color: #ffffff;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
 }
 
 </style>
@@ -102,6 +103,7 @@ menu = st.sidebar.radio(
         "📦 Product Management",
         "🚚 Inventory Operations",
         "📈 Analytics"
+        "🤖 AI Insights"
     ]
 )
 
@@ -118,6 +120,8 @@ elif menu == "🚚 Inventory Operations":
 elif menu == "📈 Analytics":
     show_analytics()
 
+elif menu == "AI Insights":
+    show_ai_insights()
 
 # Logout button
 if st.sidebar.button("Logout"):
