@@ -2,6 +2,9 @@
 
 CoreInventory Smart IMS is a Smart Inventory Management System designed to help businesses manage and monitor their inventory efficiently. The system allows users to track product stock, perform inventory operations, analyze inventory data, and generate AI-driven insights for better decision making.
 
+Live Web Application  
+https://coreinventory-smart-ims.streamlit.app/
+
 ---
 
 ## Problem Statement
@@ -65,6 +68,39 @@ The system consists of the following modules:
 - AI Insights
 
 All data is stored in a SQLite database and processed using Python libraries for analysis and machine learning.
+
+---
+
+## System Workflow
+
+```mermaid
+flowchart TD
+
+A[User Login] --> B[Dashboard]
+
+B --> C[Product Management]
+C --> D[Add / Manage Products]
+
+B --> E[Inventory Operations]
+
+E --> F[Receive Stock]
+E --> G[Deliver Products]
+E --> H[Internal Transfer]
+E --> I[Stock Adjustment]
+
+F --> J[Update Inventory Database]
+G --> J
+H --> J
+I --> J
+
+J --> K[Analytics Dashboard]
+
+K --> L[AI Insights]
+
+L --> M[Demand Prediction]
+L --> N[Restock Recommendation]
+L --> O[Inventory Health Score]
+
 
 ---
 
