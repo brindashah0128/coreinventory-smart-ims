@@ -78,29 +78,19 @@ flowchart TD
 
 A[User Login] --> B[Dashboard]
 
-B --> C[Product Management]
-C --> D[Add / Manage Products]
+B --> C[Add / Manage Products]
 
-B --> E[Inventory Operations]
+C --> D[Inventory Operations
+Receive / Deliver / Transfer]
 
-E --> F[Receive Stock]
-E --> G[Deliver Products]
-E --> H[Internal Transfer]
-E --> I[Stock Adjustment]
+D --> E[Update Inventory Database]
 
-F --> J[Update Inventory Database]
-G --> J
-H --> J
-I --> J
+E --> F[Analytics Dashboard]
 
-J --> K[Analytics Dashboard]
-
-K --> L[AI Insights]
-
-L --> M[Demand Prediction]
-L --> N[Restock Recommendation]
-L --> O[Inventory Health Score]
-
+F --> G[AI Insights
+Demand Prediction
+Restock Recommendation
+Inventory Health Score]
 
 ---
 
