@@ -102,7 +102,7 @@ menu = st.sidebar.radio(
         "📊 Dashboard",
         "📦 Product Management",
         "🚚 Inventory Operations",
-        "📈 Analytics"
+        "📈 Analytics",
         "🤖 AI Insights"
     ]
 )

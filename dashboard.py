@@ -7,8 +7,7 @@ def show_dashboard():
 
     st.markdown(
     """
-    ### 📦 CoreInventory Smart IMS
-
+    ### 
     Welcome to the Smart Inventory Management System.
 
     This platform helps businesses manage products, track inventory movements, analyze stock data, and generate AI-driven insights for better decision making.
@@ -63,5 +62,7 @@ def show_dashboard():
 
     st.dataframe(products)
 
-    show_analytics()
+
     conn.close()
+
+show_analytics()
